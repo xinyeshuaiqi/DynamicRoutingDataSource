@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    master: # 主数据源
+      url: jdbc:mysql://39.97.47.254:3306/mydb?characterEncoding=utf8&useUnicode=true
+      username: root
+      password: wmx123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+    shadow: # 影子数据源
+      url: jdbc:mysql://39.97.47.254:3306/db_shadow?characterEncoding=utf8&useUnicode=true
+      username: root
+      password: wmx123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
